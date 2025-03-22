@@ -1,0 +1,68 @@
+2025-03-22 16:23:01,506 ERROR: Dataset /data/train.csv not found.
+2025-03-22 16:23:14,557 ERROR: Dataset /data/train.csv not found.
+2025-03-22 16:24:01,146 ERROR: Dataset /data/test.csv not found.
+2025-03-22 16:24:12,327 ERROR: Dataset /data/train.csv not found.
+2025-03-22 16:26:36,557 ERROR: Dataset /data/train.csv not found.
+2025-03-22 16:27:32,714 INFO: Loaded ./data/train.csv
+2025-03-22 16:31:55,687 INFO: Loaded ./data/train.csv
+2025-03-22 16:31:55,714 INFO: Training complete.
+2025-03-22 16:31:55,715 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 16:32:40,935 INFO: Loaded ./data/test.csv
+2025-03-22 16:32:40,937 INFO: Loaded ./data/test.csv
+2025-03-22 16:32:40,938 INFO: Model loaded.
+2025-03-22 16:32:40,952 INFO: Prediction complete.
+2025-03-22 16:33:23,119 INFO: Loaded ./data/train.csv
+2025-03-22 16:33:23,143 INFO: Training complete.
+2025-03-22 16:33:23,144 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 16:33:27,032 INFO: Loaded ./data/test.csv
+2025-03-22 16:33:27,035 INFO: Loaded ./data/test.csv
+2025-03-22 16:33:27,035 INFO: Model loaded.
+2025-03-22 16:33:27,040 INFO: Prediction complete.
+2025-03-22 16:33:27,055 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 16:37:36,885 INFO: Loaded ./data/train.csv
+2025-03-22 16:37:36,889 INFO: Loaded ./data/train.csv
+2025-03-22 16:37:36,889 INFO: Model loaded.
+2025-03-22 16:37:36,896 INFO: Prediction complete.
+2025-03-22 16:37:36,900 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 16:39:41,362 INFO: Loaded ./data/train.csv
+2025-03-22 16:46:27,747 INFO: Loaded ./data/train.csv
+2025-03-22 16:46:48,876 INFO: Loaded ./data/test.csv
+2025-03-22 16:49:07,518 INFO: Loaded ./data/train.csv
+2025-03-22 16:49:31,072 INFO: Loaded ./data/train.csv
+2025-03-22 16:49:31,118 INFO: Training complete.
+2025-03-22 16:49:31,119 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 16:49:37,841 INFO: Loaded ./data/test.csv
+2025-03-22 16:49:37,850 INFO: Loaded ./data/test.csv
+2025-03-22 16:49:37,851 INFO: Model loaded.
+2025-03-22 16:49:37,857 INFO: Prediction complete.
+2025-03-22 16:49:37,859 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 17:04:34,093 INFO: Loaded ./data/train.csv
+2025-03-22 17:06:03,165 INFO: Loaded ./data/train.csv
+2025-03-22 17:06:03,194 INFO: Training complete.
+2025-03-22 17:06:03,196 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 17:06:09,629 INFO: Loaded ./data/test.csv
+2025-03-22 17:06:09,637 INFO: Loaded ./data/test.csv
+2025-03-22 17:06:09,638 INFO: Model loaded.
+2025-03-22 17:06:09,643 INFO: Prediction complete.
+2025-03-22 17:06:09,647 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 17:07:37,578 INFO: Loaded ./data/test.csv
+2025-03-22 17:07:37,586 INFO: Loaded ./data/test.csv
+2025-03-22 17:07:37,586 INFO: Model loaded.
+2025-03-22 17:07:37,593 INFO: Prediction complete.
+2025-03-22 17:07:37,597 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 17:07:41,956 INFO: Loaded ./data/train.csv
+2025-03-22 17:07:41,996 INFO: Training complete.
+2025-03-22 17:07:41,997 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 17:07:44,920 INFO: Loaded ./data/test.csv
+2025-03-22 17:07:44,928 INFO: Loaded ./data/test.csv
+2025-03-22 17:07:44,928 INFO: Model loaded.
+2025-03-22 17:07:44,934 INFO: Prediction complete.
+2025-03-22 17:07:44,938 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 17:08:39,483 INFO: Loaded ./data/train.csv
+2025-03-22 17:08:39,515 INFO: Training complete.
+2025-03-22 17:08:39,516 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 17:08:43,249 INFO: Loaded ./data/test.csv
+2025-03-22 17:08:43,258 INFO: Loaded ./data/test.csv
+2025-03-22 17:08:43,258 INFO: Model loaded.
+2025-03-22 17:08:43,263 INFO: Prediction complete.
+2025-03-22 17:08:43,266 INFO: Predictions saved to ./data/result.csv.
