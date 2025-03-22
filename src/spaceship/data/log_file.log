@@ -66,3 +66,14 @@
 2025-03-22 17:08:43,258 INFO: Model loaded.
 2025-03-22 17:08:43,263 INFO: Prediction complete.
 2025-03-22 17:08:43,266 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 18:29:21,390 INFO: Loaded ./data/train.csv
+2025-03-22 18:29:21,433 INFO: Training complete.
+2025-03-22 18:29:21,434 INFO: Model saved to ./model/logistic_model.pkl.
+2025-03-22 18:29:31,707 INFO: Loaded ./data/test.csv
+2025-03-22 18:29:31,716 INFO: Loaded ./data/test.csv
+2025-03-22 18:29:31,716 INFO: Model loaded.
+2025-03-22 18:29:31,722 INFO: Prediction complete.
+2025-03-22 18:29:31,727 INFO: Predictions saved to ./data/result.csv.
+2025-03-22 19:27:16,327 INFO: Loaded ./data/train.csv
+2025-03-22 19:27:16,378 INFO: Training complete.
+2025-03-22 19:27:16,380 INFO: Model saved to ./model/logistic_model.pkl.
