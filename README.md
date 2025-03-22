@@ -4,9 +4,13 @@ How to use it:
 
 clone repo via
 git clone https://github.com/DaemoNandAndroiD/TSUML-Lab1.git -b master
+
 cd TSUML-Lab1
+
 cd src
+
 cd spaceship
+
 poetry install
 
 After that for train:
