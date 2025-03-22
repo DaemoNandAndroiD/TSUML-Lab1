@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 import pickle
@@ -9,6 +10,7 @@ import numpy as np
 import optuna
 import pandas as pd
 from catboost import CatBoostClassifier
+from clearml import Task
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import cross_val_score
 from sklearn.preprocessing import OneHotEncoder
@@ -27,6 +29,8 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s: %(message)s'
 )
+
+task = Task.init(project_name='Spaceship Titanic', task_name='catboost_model')
 
 class CatBoostModel:
     def __init__(self):
@@ -68,6 +72,9 @@ class CatBoostModel:
         else:
             y = None
 
+        task.upload_artifact(name='Train Dataset', artifact_object='./data/train.csv')
+        task.upload_artifact(name='Test Dataset', artifact_object='./data/test.csv')
+
         return data_final, y
 
     def objective(self,trial):
@@ -95,19 +102,31 @@ class CatBoostModel:
     def train(self, dataset_path):
         data = self.load_data(dataset_path)
         self.x_train, self.y_train = self.preprocess(data, Mode.TRAIN)
+        logging.info('Data preprocessed')
 
         self.study = optuna.create_study(direction="maximize")
         self.study.optimize(self.objective, n_trials=10)
         best_params = self.study.best_params
+        logging.info('Optuna work completed.')
+
+        with open('best_params.json', 'w') as f:
+            json.dump(best_params, f)
+
+        task.upload_artifact(name='Best Hyperparameters via Optuna', artifact_object='best_params.json')
 
         self.model = CatBoostClassifier(**best_params)
         self.model.fit(self.x_train, self.y_train)
+        logging.info('Training complete.')
 
         if not os.path.exists('./model'):
             os.makedirs('./model')
 
         with open(MODEL_PATH, 'wb') as f:
             pickle.dump(self.model, f)
+
+        task.upload_artifact(name='Best Model', artifact_object=MODEL_PATH)
+
+        logging.info('Model saved.')
 
     def predict(self, dataset_path):
         data = self.load_data(dataset_path)
