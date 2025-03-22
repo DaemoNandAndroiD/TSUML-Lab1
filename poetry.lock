@@ -481,6 +481,40 @@ files = [
 ]
 
 [[package]]
+name = "clearml"
+version = "1.18.0"
+description = "ClearML - Auto-Magical Experiment Manager, Version Control, and MLOps for AI"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "clearml-1.18.0-py2.py3-none-any.whl", hash = "sha256:fe53ffcfdb0799150ad5ae1ca95bdbd568e570cbde2e35a65474e36606a899d0"},
+]
+
+[package.dependencies]
+attrs = ">=18.0"
+furl = ">=2.0.0"
+jsonschema = ">=2.6.0"
+numpy = ">=1.10"
+pathlib2 = ">=2.3.0"
+Pillow = ">=4.1.1"
+psutil = ">=3.4.2"
+pyjwt = {version = ">=2.4.0,<2.10.0", markers = "python_version > \"3.5\""}
+pyparsing = ">=2.0.3"
+python-dateutil = ">=2.6.1"
+PyYAML = ">=3.12"
+referencing = {version = "<0.40", markers = "python_version >= \"3.8\""}
+requests = ">=2.20.0"
+six = ">=1.16.0"
+urllib3 = ">=1.21.1"
+
+[package.extras]
+azure = ["azure-storage-blob (>=12.0.0)"]
+gs = ["google-cloud-storage (>=1.13.2)"]
+router = ["fastapi (>=0.115.2)", "httpx (>=0.27.2)", "uvicorn (>=0.31.1)"]
+s3 = ["boto3 (>=1.9)"]
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -794,6 +828,22 @@ files = [
     {file = "fqdn-1.4.0-py3-none-any.whl", hash = "sha256:e935616ae81c9c60a22267593fe8e6af68cecc68549cc71bb9bfbcbbcb383386"},
     {file = "fqdn-1.4.0.tar.gz", hash = "sha256:30e8f2e685ce87cdace4712fd97c5d09f5e6fa519bbb66e8f188f6a7cb3a5c4e"},
 ]
+
+[[package]]
+name = "furl"
+version = "2.1.4"
+description = "URL manipulation made simple."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "furl-2.1.4-py2.py3-none-any.whl", hash = "sha256:da34d0b34e53ffe2d2e6851a7085a05d96922b5b578620a37377ff1dbeeb11c8"},
+    {file = "furl-2.1.4.tar.gz", hash = "sha256:877657501266c929269739fb5f5980534a41abd6bbabcb367c136d1d3b2a6015"},
+]
+
+[package.dependencies]
+orderedmultidict = ">=1.0.1"
+six = ">=1.8.0"
 
 [[package]]
 name = "graphviz"
@@ -1925,6 +1975,21 @@ optional = ["boto3", "cmaes (>=0.10.0)", "google-cloud-storage", "grpcio", "matp
 test = ["coverage", "fakeredis[lua]", "grpcio", "kaleido (<0.4)", "moto", "protobuf (>=5.28.1)", "pytest", "scipy (>=1.9.2)", "torch ; python_version <= \"3.12\""]
 
 [[package]]
+name = "orderedmultidict"
+version = "1.0.1"
+description = "Ordered Multivalue Dictionary"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "orderedmultidict-1.0.1-py2.py3-none-any.whl", hash = "sha256:43c839a17ee3cdd62234c47deca1a8508a3f2ca1d0678a3bf791c87cf84adbf3"},
+    {file = "orderedmultidict-1.0.1.tar.gz", hash = "sha256:04070bbb5e87291cc9bfa51df413677faf2141c73c61d2a5f7b26bea3cd882ad"},
+]
+
+[package.dependencies]
+six = ">=1.8.0"
+
+[[package]]
 name = "overrides"
 version = "7.7.0"
 description = "A decorator to automatically detect mismatch when overriding a method."
@@ -2058,6 +2123,21 @@ files = [
 [package.extras]
 qa = ["flake8 (==5.0.4)", "mypy (==0.971)", "types-setuptools (==67.2.0.1)"]
 testing = ["docopt", "pytest"]
+
+[[package]]
+name = "pathlib2"
+version = "2.3.7.post1"
+description = "Object-oriented filesystem paths"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "pathlib2-2.3.7.post1-py2.py3-none-any.whl", hash = "sha256:5266a0fd000452f1b3467d782f079a4343c63aaa119221fbdc4e39577489ca5b"},
+    {file = "pathlib2-2.3.7.post1.tar.gz", hash = "sha256:9fe0edad898b83c0c3e199c842b27ed216645d2e177757b2dd67384d4113c641"},
+]
+
+[package.dependencies]
+six = "*"
 
 [[package]]
 name = "pexpect"
@@ -2308,6 +2388,24 @@ files = [
 
 [package.extras]
 windows-terminal = ["colorama (>=0.4.6)"]
+
+[[package]]
+name = "pyjwt"
+version = "2.9.0"
+description = "JSON Web Token implementation in Python"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "PyJWT-2.9.0-py3-none-any.whl", hash = "sha256:3b02fb0f44517787776cf48f2ae25d8e14f300e6d7545a4315cee571a415e850"},
+    {file = "pyjwt-2.9.0.tar.gz", hash = "sha256:7e1e5b56cc735432a7369cbfa0efe50fa113ebecdc04ae6922deba8b84582d0c"},
+]
+
+[package.extras]
+crypto = ["cryptography (>=3.4.0)"]
+dev = ["coverage[toml] (==5.0.4)", "cryptography (>=3.4.0)", "pre-commit", "pytest (>=6.0.0,<7.0.0)", "sphinx", "sphinx-rtd-theme", "zope.interface"]
+docs = ["sphinx", "sphinx-rtd-theme", "zope.interface"]
+tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 
 [[package]]
 name = "pyparsing"
@@ -3305,4 +3403,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12"
-content-hash = "b75ac30e19bce48e66ecd178708400b2b7a1a808e696d3e5f88697546cea64ec"
+content-hash = "193cef25936950c5ea7c1631df1a51d9fe761a6ad3cffc5f2d7e4412c0442ff8"
